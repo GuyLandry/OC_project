@@ -32,3 +32,11 @@ CLS
 color 5
 ECHO wifi MyPrivateNetwork set 
 GOTO MENU
+
+:START
+netsh wlan start hostednetwork
+CLS
+color 3
+ECHO wifi MyPrivateNetwork started 
+GOTO MENU
+
