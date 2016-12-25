@@ -53,4 +53,7 @@ netsh wlan show hostednetwork
 color 0
 GOTO MENU
 
-
+:DELETE
+CLS
+netsh wlan set hostednetwork mode=disallow
+GOTO MENU
