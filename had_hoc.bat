@@ -40,3 +40,10 @@ color 3
 ECHO wifi MyPrivateNetwork started 
 GOTO MENU
 
+:STOP
+netsh wlan stop hostednetwork
+CLS
+color 4
+ECHO wifi MyPrivateNetwork stopped 
+GOTO MENU
+
