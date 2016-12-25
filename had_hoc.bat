@@ -25,3 +25,10 @@ IF %M%==3 GOTO STOP
 IF %M%==4 GOTO DETAILS
 IF %M%==5 GOTO EOF
 IF %M%==6 GOTO DELETE
+
+:SET
+netsh wlan set hostednetwork mode=allow ssid=MyNetwork key=Kensou12 keyusage=persistent
+CLS
+color 5
+ECHO wifi MyPrivateNetwork set 
+GOTO MENU
