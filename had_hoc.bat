@@ -47,3 +47,10 @@ color 4
 ECHO wifi MyPrivateNetwork stopped 
 GOTO MENU
 
+:DETAILS
+CLS
+netsh wlan show hostednetwork
+color 0
+GOTO MENU
+
+
